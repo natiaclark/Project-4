@@ -6,12 +6,9 @@
  class Phrase {
      constructor(phrase) {
          this.phrase = phrase.toLowerCase();
-     }
+     }}
 
-
-     /**  * Creates phrases for use in game  * 
-      * @return {array} An array of phrases that could be used in the game  */ 
-     
-      createPhrases() {}; 
-       
- }
+/** 
+ * Display phrse on game board
+*/
+addPhraseToDisplay() {};
