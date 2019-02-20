@@ -13,25 +13,26 @@
      /**  * Creates phrases for use in game  * 
       * @return {array} An array of phrases that could be used in the game  */ 
      
-     createPhrase( 
-         let myPhrases =  [
-            "life is like a box of chocolates",
-            "there is no trying",
-            "may the force be with you",
-            "you have to see the matrix for yourself",
-            "you talking to me"
-          ];
-        
-
-         for (let i = 0; i < myPhrase.lenght; i += 1) {
-             console.log(phrase[i])
-         }
-
-         myPhrase.foreach(myPhrase =>  console.log(myPhrase)
-         );
-
+     createPhrase() {
+         let phrases = [];
+            phrases.push(new Phrase('life is like a box of chocolates'));
+            phrases.push(new Phrase('there is no trying'));
+            phrases.push(new Phrase('may the force be with you'));
+            phrase.push(new  Phrase('you have to see the matrix for yourself'));
+            phrases.push(new Phrase('you talking to me'));
+            return phrases;
          
-     );
-     
+                  
+ }}
 
- }
+ /**
+* Selects random phrase from phrases property
+* @return {Object} Phrase object chosen to be used
+*/
+getRandomPhrase() { 
+    
+        return this.phrase[Math.floor(Math.random() * this.phrase.length)];
+      
+}
+
+
